@@ -13,26 +13,15 @@
   <body class="flex flex-col min-h-screen">
     <!-- Navigation -->
     <div class="container">
-      <nav
-        class="py-6 px-6 flex justify-between items-center border-b border-gray-200 navbar navbar-expand navbar-light"
-      >
+      <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200 navbar navbar-expand navbar-light">
         <a href="/" class="text-2xl font-weight: bold;">Puddle</a>
         <!-- Links -->
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="Contentpage-Simple.html"
-              >Simple Content Page</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contentpage-Advanced.html"
-              >Advanced Content Page</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Contactpage.html">Contact</a>
-          </li>
-        </ul>
+        <div class="space-x-6">
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">New Item</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a>
+            <a href="#" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Sign up</a>
+            <a href="#" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Log in</a>            
+        </div>
       </nav>
     </div>
 
@@ -52,14 +41,15 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
+  <footer class="py-6 px-6 bg-gray-800 text-white">
     <div class="container mx-auto">
         <div class="mx-4">
-          <ul class="flex space-x-4 justify-center">
-            <h5 class="text-lg font-semibold">Follow Puddle</h5>
-            <li><a href="#" class="text-gray-300 hover:text-white">Twitter</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Facebook</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-white">Instagram</a></li>
+          <ul class="flex space-x-4 between">
+            <h5 class="text-lg font-semibold">Menu</h5>
+            <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
+            <li><a href="{% url 'contact' %}" class="text-gray-300 hover:text-white">Contact</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Term of Use</a></li>
           </ul>
         </div>
         <!-- Add more columns for additional footer content if needed -->      
