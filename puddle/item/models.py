@@ -13,7 +13,7 @@ class Category(models.Model):
     
 class Item(models.Model):
     name = models.CharField(max_length=255)
-    description = models.Textfield(blank=True, null=True)
+    description = models.TextField(blank=True, null=True)
     price = models.FloatField()
     is_sold = models.BooleanField(default=False)
     created_at = models.DateTimeField()
