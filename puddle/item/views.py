@@ -16,4 +16,4 @@ def detail(request, pk):
     
 @login_required   
 def new(request):
-    fomr = NewItemForm()
+    form = NewItemForm()
